@@ -1,6 +1,6 @@
 # Car_detection
 Cardetection is a comprehensive car classification system built using PyTorch that can identify various car makes and models from images.
-- **including Iranian cars**
+- **Including Iranian cars**
 - **Reaching over 90% in Accuracy, Precision, Recall and F1.**
 # Description
 Cardetection is a comprehensive car classification system built using PyTorch that can identify various car makes and models from images. The project integrates two distinct datasets:
