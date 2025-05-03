@@ -28,7 +28,7 @@ pip install torch torchvision matplotlib numpy tqdm scikit-learn kagglehub torch
 ## Usage
 ### Dataset Preparation
 The project expects data to be organized in the following structure:
-
+```
 dataset1_dir/
 ├── train/
 │   ├── class1/
@@ -52,7 +52,7 @@ dataset2_dir/
     │   └── images...
     ├── class2/
     │   └── images...
-
+```
 ### Training the Model
 # Set up paths to your datasets
 dataset1_dir = 'path/to/stanford_car_dataset'
