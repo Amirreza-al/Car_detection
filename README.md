@@ -13,6 +13,14 @@ Cardetection is a comprehensive car classification system built using PyTorch th
 - Comprehensive evaluation metrics
 - Interactive prediction functionality
 
+
+## Technical Details
+- **Architecture**: ResNet18 with modified classification head
+- **Input Size**: 400x400 RGB images
+- **Optimization**: SGD with momentum and learning rate scheduling
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score
+- **Early Stopping**: Implemented to prevent overfitting
+
 ## Performance metrics
 
 ![output](https://github.com/user-attachments/assets/9c719b98-ce05-42f3-8fc3-9401f9202be7)
@@ -57,16 +65,19 @@ dataset2_dir/
     ├── class2/
     │   └── images...
 ```
-### Training the Model
-# Set up paths to your datasets
+### Running the Notebook
+1- Open the Jupyter notebook:
+ ```
+jupyter lab car-detection.ipynb
 ```
-dataset1_dir = 'path/to/stanford_car_dataset'
-dataset2_dir = 'path/to/iran_used_cars_dataset'
+2- Execute the cells in order to:
+    - Load and prepare the datasets
+    - Initialize and train the model
+    - Evaluate model performance
+    - Make predictions on test images
 
-#now run the training code
-```
 ## Making Predictions
-Once your model is trained, you can use the pred_car function to make predictions on new images:
+To classify a car image, use the ```pred_car``` function:
 ```
 pred_car(model, dataset=1, image_path='path/to/car/image.jpg')
 ```
